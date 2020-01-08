@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+	<head>
+		<title>What's the weather like?</title>
+		<link href="sunny_cloud.png" rel="icon">
+		<meta name="author" content="Pasquale Giorgio">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Kulim+Park:400,600&display=swap" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<script src="jQuery.js" rel="text/javascript"></script>
+		<script src="weather.js" rel="text/javascript"></script>
+		<script src="https://kit.fontawesome.com/0999994394.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="page-content">
+			<header>
+				<div class="header">
+					<p class="title">What's the weather like?</a>
+					<br/>
+					<img class="icon" src="sunny_cloud.png" align="center"/>
+				</div>
+			</header>
+
+			<div class="search-bar" align="center">
+				<form id="cityName" method="POST">
+					<table style="width: 100%">
+						<tr>
+							<td align="left">
+								<input type="text" id="city" name="city" class="search-box" id="cityName" placeholder="Inserisci una città">
+							</td>
+							<td align="right">
+								<button type="submit" class="button">Cerca</button>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+
+			<div class="main-result">
+				<div class="general-weather">
+					<a class="title" id="city-name"></a>
+					<a class="sub-title" id="country"></a>
+					<a class="info"><img class="icon" id="state-icon" src=""></a>
+					<br>
+					<a class="info" id="state"></a>
+					<br>
+					<a id="temp"></a>
+				</div>
+
+
+				<div class="detailed-weather" id="main-measures">
+					<table>
+						<tr>
+							<td><a class="info">Temperatura Massima</a></td>
+							<td><a class="info" id="temp-max"></a></td>
+						</tr>
+						<tr>
+							<td><a class="info">Temperatura Minima</a></td>
+							<td><a class="info" id="temp-min"></a></td>
+						</tr>
+						<tr>
+							<td><a class="info">Umidità</a></td>
+							<td><a class="info" id="humidity"></a></td>
+						</tr>
+						<tr>
+							<td><a class="info">Pressione Atmosferica</a></td>
+							<td><a class="info" id="pressure"></a></td>
+						</tr>
+						<tr>
+							<td><a class="info">Velocità vento: </a></td>
+							<td><a class="info" id="speed"></a></td>
+						</tr>
+						<tr>
+							<td><a class="info">Sorgimento: </a></td>
+							<td><a class="info" id="sunrise"></a></td>
+						</tr>
+						<tr>
+							<td><a class="info">Tramonto: </a></td>
+							<td><a class="info" id="sunset"></a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<h3>Developed by Pasquale Giorgio<br/>
+			web developer student @ start2impact</h3><br/>
+			<div class="social">
+				<a href='mailto:pasqualegiorgio9868@gmail.com' target='_blank'><i class='fas fa-envelope' id="icon"></i></a>
+				<a href="https://www.linkedin.com/in/pasqualegiorgio/" target='_blank'><i class="fab fa-linkedin" id="icon"></i></a>
+				<a href="https://www.facebook.com/pasquale.giorgio.92" target='_blank'><i class="fab fa-facebook-square" id="icon"></i></a>
+				<a href="https://www.instagram.com/pasquale_giorgio/" target='_blank'><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+	</body>
+</html>
